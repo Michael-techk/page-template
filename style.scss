@@ -1,0 +1,28 @@
+@import 'scss/variables&fonts';
+@import 'scss/buttons';
+@import 'scss/icons';
+@import 'scss/tiles';
+@import 'scss/title';
+@import 'scss/menu';
+
+*{
+    transition: .3s linear;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    min-height: 300vh;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: $bg-1-color;
+    background-image: $bg-1;
+}
+
+body.dark{
+    background-color: $bg-2-color;
+    background-image: $bg-2;
+}

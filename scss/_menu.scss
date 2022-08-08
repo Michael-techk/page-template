@@ -1,0 +1,114 @@
+.menu-container{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 0;
+    margin: 0;
+    background: $ligth-bg;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 5px;
+    .options-container{
+        width: 40%;
+        display: flex;
+        padding: 0;
+        margin: 0;
+        justify-content: space-evenly;
+        align-items: center;
+        @media(max-width: 1000px){
+            width: 60%;
+        }
+        .option-item{
+            list-style: none;
+            .option{
+                text-decoration: none;
+                color: $ligth-font;
+                font-family: 'Roboto', sans-serif;
+                font-weight: 600;
+                font-size: $font-size-bg;
+                padding: 5px;
+                transition: none;
+                @media(max-width: 1000px){
+                    font-size: $font-size-md;
+                }
+                &:hover{
+                    color: $ligth-font3;
+                    border-bottom: 3px solid $ligth-font3;
+                }
+            }
+        }
+        .option-item:nth-child(1){
+            padding-left: 20px;
+        }
+    }
+    .mode-container{
+            width: 35%;
+            display: flex;
+            padding: 0;
+            margin: 0;
+            justify-content: flex-end;
+            align-items: center;
+            .mode-item,
+            .switch{
+                list-style: none;
+                padding: 5px;
+            }
+            .mode-item{
+                font-family: 'Lato', sans-serif;
+                letter-spacing: 1px;
+                color: $ligth-font3;
+                font-size: $font-size-md;
+                font-weight: 400;
+                padding-right: 15px;
+                @media(max-width: 1000px){
+                    font-size: $font-size-smol;
+                    padding-right: 5px;
+                }
+                i{
+                    font-size: $font-size-bg2;
+                    @media(max-width: 1000px){
+                        font-size: $font-size-bg;
+                    }
+                }
+            }
+            .switch{
+                width: 50px;
+                border-radius: 25px;
+                height: 25px;
+                background-color: $ligth-font2;
+                margin-right: 20px;
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                cursor: pointer;
+                transition: .3s linear;
+                .bulb{
+                    width: 25px;
+                    border-radius: 50%;
+                    height: 25px;
+                    background-color: $ligth-bg;
+                }
+            }
+    }
+}
+
+.menu-container.dark{
+    background-color: $dark-bg;
+    .options-container .option-item .option{
+        color: $dark-font;
+        &:hover{
+            color: $dark-font2;
+            border-color: $dark-font2;
+        }
+    }
+    li.mode-item{
+        color: $dark-font2
+    }
+    li.switch{
+        background-color: $dark-font;
+        justify-content: flex-end;
+    }
+
+}

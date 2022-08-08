@@ -1,0 +1,156 @@
+.button-wrapper{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    h1{
+        padding-top: 100px;
+        width: 100%;
+        text-align: center;
+        font-size: $font-size-xxl;
+        font-family: 'Lobster',sans-serif;
+        color: $ligth-font3;
+        padding-bottom: 0;
+        margin-bottom: 0;
+    }
+    .buttons{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        button{
+            width: 100px;
+            height: 40px;
+            padding: 5px;
+            margin: 10px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-family: 'Roboto', sans-serif;
+            font-size: $font-size-md;
+        }
+        button:nth-child(1){
+            background-color: $ligth-font;
+            color: $dark-font2;
+            border: none;
+            &:hover{
+                filter: brightness(110%);
+            }
+        }
+        button:nth-child(2){
+            background-color: $ligth-bg2;
+            color: $dark-font2;
+            border: none;
+            &:hover{
+                filter: brightness(110%);
+            }
+        }
+        button:nth-child(3){
+            color: $dark-font2;
+            background-color: $ligth-font;
+            opacity: 0.6;
+            border: none;
+            cursor: default;
+        }
+        button:nth-child(4){
+            background-color: $dark-font2;
+            border: 2px solid $ligth-font;
+            &:hover{
+                background-color: $ligth-font;
+                border: none;
+                color: $dark-font2;
+            }
+        }
+        button:nth-child(5){
+            background-color: $dark-font2;
+            border: 2px solid $ligth-bg2;
+            &:hover{
+                background-color: $ligth-bg2;
+                border: none;
+                color: $dark-font2;
+            }
+        }
+        button:nth-child(6){
+            background-color: $dark-font2;
+            border: 2px solid $ligth-font;
+            opacity: 0.6;
+            &:hover{
+                background-color: $ligth-font;
+                border: none;
+                color: $dark-font2;
+            }
+        }
+    }
+    .text-box{
+        width: 45%;
+        margin: 20px auto;
+        background-color: $dark-bg;
+        border-radius: 12px;
+        p{
+            font-size: $font-size-md;
+            font-family: 'Roboto', sans-serif;
+            font-weight: 400;
+            padding: 20px;
+            color: $dark-font2;
+            opacity: 0.8;
+            text-align: justify;
+            letter-spacing: 1px;
+        }
+    }
+}
+
+.button-wrapper.dark{
+    h1{
+        color: $dark-font2;
+    }
+    button:nth-child(1){
+        background-color: $dark-font;
+        color: $dark-bg2;
+    }
+    button:nth-child(2){
+        background-color: rgb(18, 236, 236);
+        filter: brightness(130%);
+        color: $dark-bg2;
+    }
+    button:nth-child(3){
+        color: $dark-bg2;
+        background-color: $dark-font;
+    }
+    button:nth-child(4){
+        background-color: $dark-bg2;
+        border: 2px solid $dark-font;
+        color: $dark-font2;
+        &:hover{
+            background-color: $dark-font;
+            color: $dark-bg2;
+        }
+    }
+    button:nth-child(5){
+        background-color: $dark-bg2;
+        border: 2px solid rgb(18, 236, 236);
+        color: $dark-font2;
+        &:hover{
+            background-color: rgb(18, 236, 236);
+            color: $dark-bg2;
+        }
+    }
+    button:nth-child(6){
+        background-color: $dark-bg2;
+        border: 2px solid $dark-font;
+        color: $dark-font2;
+        &:hover{
+            background-color: $dark-font;
+            color: $dark-bg2;
+        }
+    }
+    .text-box{
+        background-color: $ligth-font2;
+        opacity: 0.8;
+        p{
+            color: $dark-bg2;
+            opacity: 1;
+        }
+    }
+}

@@ -1,0 +1,33 @@
+.title-container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .title{
+        padding: 5px;
+        margin: 0;
+        font-family: 'Lobster';
+        letter-spacing: 3px;
+        font-size: $font-size-xxl;
+        color: $ligth-font3;
+    }
+    .subTitle{
+        font-size: $font-size-bg2;
+        color: $ligth-font3;
+        font-family: 'Lato', sans-serif;
+        font-weight: 400;
+        letter-spacing: 2px;
+        padding: 20px 10px 10px 10px;
+        margin: 0;
+        opacity: 0.8;
+    }
+}
+
+.title-container.dark{
+    .title,
+    .subTitle{
+        color: $dark-font2;
+    }
+}

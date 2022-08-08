@@ -1,0 +1,25 @@
+.social-icons{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    i{
+        margin: 30px;
+        font-size: $font-size-xxl;
+        color: $ligth-font;
+        &:hover{
+            cursor: pointer;
+            color: $ligth-font3;
+        }
+    }
+}
+
+.social-icons.dark{
+    i{
+        color: $dark-font;
+        &:hover{
+            color: $dark-font2;
+        }
+    }
+}
